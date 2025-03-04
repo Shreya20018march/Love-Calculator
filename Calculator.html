@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/User/Desktop/JavaScript/Calculator.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        
+    
+        .h{
+                color:black;
+                font-size: 50px;
+                font-weight: bold ;
+                font-style: italic;
+        }
+        .image-container{
+            margin-left:350px;
+           height: 400px;
+           width: 500px;
+            background-image: url(./night.jpg);
+            background-size: cover;
+            border-radius:20px;
+            
+        }
+        .form{
+            color:white;
+        }
+            #btn{
+                height:50px;
+                width:80px;
+                border-radius: 20px;
+            }
+            #name{
+                height:40px;
+                width:250px;
+            
+            }
+        
+            #mname{
+                height:40px;
+                width:250px;
+                margin-left:20px;
+                
+            }
+            .n{
+                color:white;
+            }
+        
+        
+        
+    </style>
+</head>
+<body>
+
+    
+   <center><u> <h1 class="h">Love Calculator</h1></u></center>
+    
+    <div class=" image-container">
+       
+       <form> <br><br><br>
+        <label for="fname" class="n" >Female Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <br><br><br>
+        <label for="name" class="n">Male Name:</label>
+        <input type="text" id="mname" placeholder="Enter Your Name"><br><br><br>
+        <br>
+       <center> <button  onclick="btn()">Play</button> </center> 
+       </form>
+            
+      
+
+        <audio autoplay id="au1" ><source src="./KAUN_TUJHE__Lyrical___M.S._DHONI_-THE_UNTOLD_STORY___Amaal_Mallik_Palak___Sushant_Singh_Disha_Patani(128k) (1).mp3"></audio>
+        <audio id="au2"><source src="./Dekha Hazaro Dafaa - Rustom - Akshay Kumar & Ileana D'cruz - Arijit Singh , Palak M- Jeet Gannguli.mp3"></audio>
+        <audio id="au3"><source src=""></audio> 
+    </div>
+        <script>
+
+        function btn()
+        {
+           document.getElementById("au1").play();
+            var a = Math.floor(Math.random()*100);
+            alert(a);
+            // document.getElementById("btn").style.display="none";
+            if(a>0  && a<30)
+
+        {
+            alert("Congratulation! Both of You Good Friends...");
+        
+        }
+        else if(a>30 && a<60)
+        {
+            alert("Congratulation! Both of You Soulmate");
+        
+        document.getElementById("au2").Play();
+        }
+        else if(a>60 && a<90)
+        {
+            alert("Congratulation! Both of You Twinflames");
+            document.getElementById("au3").Play();
+        }
+        }
+
+        </script>
+   
+           
+
+</body></html>
